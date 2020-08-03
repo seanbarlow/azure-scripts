@@ -8,7 +8,7 @@ Login-AzAccount
 $resourceGroupName = Read-Host -Prompt "Enter the Resource Group name"
 
 # Location Prompt
-$location = Read-Host -Prompt "Enter the location (i.e. ""South Central US"")"
+$location = Read-Host -Prompt "Enter the location (i.e. southcentralus)"
 
 # Create a new resource group setting the name and location
 $resourceGroup = New-AzResourceGroup -Name $resourceGroupName -Location $location
